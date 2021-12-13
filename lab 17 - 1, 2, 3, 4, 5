@@ -1,0 +1,134 @@
+using System;
+
+namespace lab17
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            // Задание 1
+            /*
+            Console.WriteLine("Найти среднее арифметическое элементов массива с номерами от K до L включительно.");
+            Console.Write("Размерность массива N = ");
+            int n = int.Parse(Console.ReadLine());
+            int[] a = new int[n];
+            for (int i = 0; i < n; ++i)
+            {
+                Console.Write("Введите элементы массива {0}: ", i);
+                a[i] = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine("Ввод целых чисел К и L:");
+            Console.Write("K = ");
+            int k = int.Parse(Console.ReadLine());
+            Console.Write("L = ");
+            int l = int.Parse(Console.ReadLine());
+            int sum = 0;
+            if (1 <= k && l <= n)
+            {
+                for (int i = k; i <= l; i++)
+                {
+                    sum += a[i];
+                }
+                Console.WriteLine("Сумма элементов массива с K до L = " + sum);
+            }
+            else
+                Console.WriteLine("Обязательно: К => 1 и L <= N");
+            */
+
+            //Задание 2
+          /*
+            Console.WriteLine("Дан целочисленный массив размера N, не содержащий одинаковых чисел.");
+            Console.WriteLine("Проверить, образуют ли его элементы арифметическую прогрессию.");
+            Console.WriteLine("Если образуют, то вывести разность прогрессии, если нет — вывести 0.");
+            Console.WriteLine("N = ");
+            int n = int.Parse(Console.ReadLine());
+            bool f = true;
+            int[] a = new int[n];
+            for (int i = 0; i < n; ++i)
+            {
+                Console.WriteLine("Введите элементы массива {0}: ", i+1);
+                a[i] = int.Parse(Console.ReadLine());
+            }
+            Console.WriteLine();
+            int d = a[1] - a[0];
+            for (int i = 1; i < n; i++)
+            {
+                if (d != a[i] - a[i - 1])
+                    f = false;
+            }
+            Console.WriteLine(f);
+            */
+
+            //Задание 3
+            /*
+            Console.WriteLine("Дан массив A размера N. Найти минимальный элемент из его элементов с четными номерами: A2, A4, A6,");
+            Console.Write("Размерность массива N = ");
+            int n = int.Parse(Console.ReadLine());
+            int[] a = new int[n];
+            for (int i = 1; i < n; ++i)
+            {
+                Console.Write("Введите элементы массива {0}: ", i);
+                a[i] = int.Parse(Console.ReadLine());
+            }
+            int min = a[1];
+            for (int i = 1; i < n; i += 2)
+            {
+                if (a[i] < min) min = a[i];
+            }
+            Console.WriteLine("min = " + min);
+            */
+
+            /*
+            //Задание 4
+            Console.WriteLine("Дан массив размера N. Найти номер его последнего локального максимума");
+            Console.Write("Размерность массива N = ");
+            int n = int.Parse(Console.ReadLine());
+            int i;
+            int[] a = new int[n];
+            for (i = 0; i < n; ++i)
+            {
+                Console.Write("Введите элементы массива {0}: ", i+1);
+                a[i] = int.Parse(Console.ReadLine());
+            }
+            if (a[n - 1] > a[n - 2])
+                Console.WriteLine("Последний локальный максимум: " + n);
+            else
+            {
+                i = n - 2;
+                do
+                {
+                    i--;
+                }
+                while ((i >= 1) && !((a[i - 1] < a[i]) && (a[i] > a[i + 1])));
+                Console.WriteLine("Последний локальный максимум: " + i + 1);
+            }
+            */
+
+            //Задание 4
+            /*
+            Console.WriteLine("Дан целочисленный массив размера N, содержащий ровно два одинаковых элемента.");
+            Console.WriteLine("Найти номера одинаковых элементов и вывести эти номера в порядке возрастания. ");
+            Console.Write("Размерность массива N = ");
+            int n = int.Parse(Console.ReadLine());
+            int[] a = new int[n];
+            for (int i = 0; i < n; i++)
+            {
+                Console.Write("Введите элементы массива {0}: ", i+1);
+                a[i] = int.Parse(Console.ReadLine());
+            }
+            for (int i = 0; i < n - 1; ++i)
+            {
+                for (int j = i + 1; j < n; j++)
+                {
+                    if (a[i] == a[j])
+                    {
+                        i++;
+                        j++;
+                        Console.WriteLine(i + " " + j);
+                    }
+                }
+            }
+            */
+        }
+    }
+}
