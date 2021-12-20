@@ -8,31 +8,33 @@ namespace lab17
         {
             // Задание 1
             /*
-            Console.WriteLine("Найти среднее арифметическое элементов массива с номерами от K до L включительно.");
-            Console.Write("Размерность массива N = ");
-            int n = int.Parse(Console.ReadLine());
-            int[] a = new int[n];
-            for (int i = 0; i < n; ++i)
-            {
-                Console.Write("Введите элементы массива {0}: ", i);
-                a[i] = int.Parse(Console.ReadLine());
-            }
-            Console.WriteLine("Ввод целых чисел К и L:");
-            Console.Write("K = ");
-            int k = int.Parse(Console.ReadLine());
-            Console.Write("L = ");
-            int l = int.Parse(Console.ReadLine());
-            int sum = 0;
-            if (1 <= k && l <= n)
-            {
-                for (int i = k; i <= l; i++)
-                {
-                    sum += a[i];
-                }
-                Console.WriteLine("Сумма элементов массива с K до L = " + sum);
-            }
-            else
-                Console.WriteLine("Обязательно: К => 1 и L <= N");
+             Console.WriteLine("Найти среднее арифметическое элементов массива с номерами от K до L включительно.");
+             Console.Write("Размерность массива N = ");
+             int n = int.Parse(Console.ReadLine());
+             int[] a = new int[n];
+             for (int i = 0; i < n; ++i)
+             {
+                 Console.Write("Введите элементы массива {0}: ", i + 1);
+                 a[i] = int.Parse(Console.ReadLine());
+             }
+             Console.WriteLine("Ввод целых чисел К и L:");
+             Console.Write("K = ");
+             int k = int.Parse(Console.ReadLine());
+             Console.Write("L = ");
+             int l = int.Parse(Console.ReadLine());
+             float sum = 0;
+             k--;
+             l--;
+             if (1 <= k && l <= n)
+             {
+                 for (int i = k; i <= l; i++)
+                 {
+                     sum += a[i];
+                 }
+                 Console.WriteLine("Среднее арифметическое от K до L = " + sum / (l - k + 1));
+             }
+             else
+                 Console.WriteLine("Обязательно: К => 1 и L <= N");
             */
 
             //Задание 2
